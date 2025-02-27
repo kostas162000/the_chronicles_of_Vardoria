@@ -7,6 +7,7 @@ public enum Gamestate { Freeroam,dialog,battle}
 public class Gamecontroller : MonoBehaviour
 {
 
+    [SerializeField] private GameObject mainCamera;
     [SerializeField] playerTestMovement playercontroller;
     Gamestate state;
 
@@ -60,10 +61,13 @@ public class Gamecontroller : MonoBehaviour
         }
         
 
-        if(TrapForMinigame.assignedID == 0 && BanditMovementEvent.sceneID == 0) 
+        //if(TrapForMinigame.assignedID == 0 && BanditMovementEvent.sceneID == 0) 
+        if(mainCamera.activeSelf)
             pauseButton();
 
         //if(StageController.buttonToReturnToCheckpoint) MainCamera.SetActive(true);
+
+        //Debug.Log("assignedID:" + TrapForMinigame.assignedID + "      sceneID:" + BanditMovementEvent.sceneID);
     }
 
 

@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Connect;
+//using UnityEditor.Connect;
 using UnityEngine;
 //using UnityEngine.SceneManagement;
 
@@ -428,7 +428,7 @@ public class StageController : MonoBehaviour
                 pivotCamera = Camera9;
             }
                
-                if (Input.GetKeyDown(KeyCode.Escape))
+                if (Input.GetKeyDown(KeyCode.Q))
                 {
                     Time.timeScale = 0;
                     //backgroundPanel.SetActive(true);

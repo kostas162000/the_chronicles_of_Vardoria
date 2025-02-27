@@ -22,7 +22,7 @@ public class BanditMovementEvent : MonoBehaviour
     [SerializeField] private Animator anim;
 
     
-    private Vector2 startingPosition;
+    private Vector3 startingPosition;
 
     private bool playerNeedsToRespawn = false;
 

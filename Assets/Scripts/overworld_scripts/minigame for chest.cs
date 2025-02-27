@@ -42,6 +42,10 @@ public class LockPickingMinigame : MonoBehaviour
             {
                 allowedKeys.Add(key);
             }*/
+            if (key != KeyCode.Q && key != KeyCode.F)
+            {
+                allowedKeys.Add(key);
+            }
         }
 
         if (sequenceTextParent != null)
